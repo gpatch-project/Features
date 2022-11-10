@@ -1,4 +1,9 @@
 #---------------------------------------------------------------
+Feature: US18 - Dirigirse de forma rápida a una seccion en el Landing Page 
+
+    Feature Description
+    Como visitante del Landing Page quiero moverme de manera rápida a una determinada sección sin tener que hacer uso del scroll 
+
 Escenario: El visitante se quiere mover rápidamente a una sección del Landing Page 
 
 Given que el visitante del Landing Page desea moverse hasta una sección en particular 

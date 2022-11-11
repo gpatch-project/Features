@@ -1,13 +1,22 @@
-#---------------------------------------------------
-Scenario 1:Como usuario quiero registrar los numeros de tarjetas de banco 
-Given que ingreso a la aplicacion y me logueo en la interfaz de inicio 
-When accedo a la opcion de configurar mi perfil 
-And presiono en la opcion de "añadir metodos de pagos" y selecciono la opcion de tarjetas 
-Then actualizare los numeros de tarjetas de mi perfil en la aplicacion. 
-#---------------------------------------------------
-Scenario 2:Como usuario quiero registrar las opciones de pago "YAPE,PLIN,ETC" mediante el numero celular 
-Given que ingreso a la aplicacion y me logueo en la interfaz de inicio 
-When accedo a la opcion de configurar mi perfil 
-And presiono en la opcion de "añadir metodos de pagos" y selecciono la opcion de añadir "YAPE,PLIN,ETC" 
-Then actualizare la informacion de metodos de pago de tipo Yape,PLIN,ETC de mi perfil en la aplicacion. 
-#---------------------------------------------------
+#-------------------------------------------------------------------------------------
+Feature: US11 - Registro de personas de tipo turista y dueño 
+
+    Feature Description
+    Como administrador de la aplicación quiero un registro de las personas
+     que se registraron como usuario turista y dueño de negocio.
+
+Scenario: Como administrador de la aplicación quiero un registro de los dueños de negocios.
+
+When que ingreso a la aplicación como administrador 
+And accedo a la base de datos 
+cuando Señalo la opción de filtrar tipos de usuarios 
+Then nos muestra la cantidad de información de dueños de negocios en la aplicación. 
+
+Scenario: Como administrador de la aplicación quiero un registro de los usuarios turistas 
+When que ingreso a la aplicación como administrador 
+And accedo a la base de datos 
+cuando Señalo la opción de filtrar tipos de usuarios 
+Then nos muestra la cantidad de información de usuarios turistas en la aplicación. 
+
+
+#-------------------------------------------------------------------------------------
